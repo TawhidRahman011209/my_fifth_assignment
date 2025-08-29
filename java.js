@@ -4,17 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const copyButtons = document.querySelectorAll(".copy-btn");
   const historyList = document.getElementById("historyList");
   const clearBtn = document.getElementById("clearHistory");
-
-  // Navbar counters
   const likeDisplay = document.getElementById("likeCount");
   const coinDisplay = document.getElementById("coinCount");
   const copyDisplay = document.getElementById("copyCount");
 
-  let coinCount = 100; // starting coins
+  let coinCount = 100;
   let likeCount = 0;
   let copyCount = 0;
 
-  // ❤️ Heart button functionality
   heartButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       likeCount++;
@@ -22,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 📞 Call button functionality with coin system
   callButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const service = btn.dataset.service;
@@ -44,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 📋 Copy button functionality
   copyButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const number = btn.dataset.number;
@@ -57,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🧹 Clear history
   clearBtn.addEventListener("click", () => {
     historyList.innerHTML = "";
   });
