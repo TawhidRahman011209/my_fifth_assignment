@@ -170,3 +170,32 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+.history ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 16px;              
+  border-radius: 10px;        
+  background: #f9f9f9;       
+  border: 1px solid #eee;     
+}
+
+.history ul li > div:first-child {
+  text-align: left;
+}
+
+.history ul li > div:first-child div:first-child {
+  font-weight: bold;
+}
+
+.history ul li > div:first-child div:last-child {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.history ul li > div:last-child {
+  text-align: center;
+  min-width: 100px;
+}

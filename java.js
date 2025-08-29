@@ -20,21 +20,37 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   callButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const service = btn.dataset.service;
-      const number = btn.dataset.number;
+  btn.addEventListener("click", () => {
+    const service = btn.dataset.service;
+    const number = btn.dataset.number;
 
-      if (coinCount >= 20) {
-        coinCount -= 20;
-        coinDisplay.textContent = coinCount;
+    if (coinCount >= 20) {
+      coinCount -= 20;
+      coinDisplay.textContent = coinCount;
 
-        alert(`📞 You are calling ${service} at ${number}.`);
+      alert(`📞 You are calling ${service} at ${number}.`);
 
-        const time = new Date().toLocaleTimeString();
-        const li = document.createElement("li");
-        li.textContent = `${service} (${number}) — ${time}`;
-        historyList.appendChild(li);
-      } else {
+      const time = new Date().toLocaleTimeString();
+      const li = document.createElement("li");
+
+      // Left container (service + number stacked)
+      const leftDiv = document.createElement("div");
+      const serviceEl = document.createElement("div");
+      serviceEl.textContent = service;
+      const numberEl = document.createElement("div");
+      numberEl.textContent = number;
+      leftDiv.appendChild(serviceEl);
+      leftDiv.appendChild(numberEl);
+
+      // Right container (time)
+      const rightDiv = document.createElement("div");
+      rightDiv.textContent = time;
+
+      // Add to li
+      li.appendChild(leftDiv);
+      li.appendChild(rightDiv);
+      historyList.appendChild(li);
+    } else {
         alert("You do not have enough coin. You need 20 coins minimum to do a call.");
       }
     });
@@ -48,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         copyCount++;
         copyDisplay.textContent = copyCount;
       });
-      alert(`✅ Copied ${number} to clipboard`);
+      alert(`Copied ${number} to clipboard`);
     });
   });
 
