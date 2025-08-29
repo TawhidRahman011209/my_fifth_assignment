@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Service Directory</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="./assets/logo.png" alt="Logo" class="navbar-logo" />
+      <span class="navbar-title">Emergency<br>Service</span>
+    </div>
+    <div class="navbar-right">
+      <div class="stat" style="background-color: #dfd; padding: 10px 25px; border-radius: 50px;">
+        <span id="likeCount">0</span>
+        <img src="./assets/heart.png" alt="heart" class="icon-small" />
+      </div>
+      <div class="stat" style="background-color: #dfd; padding: 10px 17px; border-radius: 50px;">
+        <span id="coinCount">100</span>
+        <img src="./assets/coin.png" alt="coin" class="icon-small" />
+      </div>
+      <div class="stat" style="background-color: #28a745; padding: 10px 20px; border-radius: 50px;"><span id="copyCount">0</span>Copy
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="./assets/logo.png" alt="Hero Logo" class="hero-logo" />
+    <h1>Emergency Service Directory</h1>
+    <p>Government Emergency Services at Your Fingertips — A Project by Government of the People's Republic of Bangladesh</p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="cards">
+      <!-- Example card -->
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/emergency.png" alt="Emergency" class="card-icon" />
+        <h3>National Emergency Number</h3>
+        <small class="card-subtitle">National Emergency</small>
+        <p class="number">999</p>
+        <span class="badge">All</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="999">Copy</button>
+          <button class="call-btn" data-service="National Emergency" data-number="999">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/police.png" alt="Police" class="card-icon" />
+        <h3>Police Helpline Number</h3>
+        <small class="card-subtitle">Police</small>
+        <p class="number">999</p>
+        <span class="badge">Police</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="999">Copy</button>
+          <button class="call-btn" data-service="Police Helpline" data-number="999">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/fire-service.png" alt="Fire" class="card-icon" />
+        <h3>Fire Service Number</h3>
+        <small class="card-subtitle">Fire Service</small>
+        <p class="number">999</p>
+        <span class="badge">Fire</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="999">Copy</button>
+          <button class="call-btn" data-service="Fire Service" data-number="999">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/ambulance.png" alt="Ambulance" class="card-icon" />
+        <h3>Ambulance Service</h3>
+        <small class="card-subtitle">Ambulance</small>
+        <p class="number">1994-999999</p>
+        <span class="badge">Health</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="1994-999999">Copy</button>
+          <button class="call-btn" data-service="Ambulance" data-number="1994-999999">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/emergency.png" alt="Women" class="card-icon" />
+        <h3>Women & Child Helpline</h3>
+        <small class="card-subtitle">Women & Child Helpline</small>
+        <p class="number">109</p>
+        <span class="badge">Help</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="109">Copy</button>
+          <button class="call-btn" data-service="Women & Child" data-number="109">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/emergency.png" alt="Anti-Corruption" class="card-icon" />
+        <h3>Anti-Corruption Helpline</h3>
+        <small class="card-subtitle">Anti-Corruption</small>
+        <p class="number">106</p>
+        <span class="badge">Govt.</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="106">Copy</button>
+          <button class="call-btn" data-service="Anti-Corruption" data-number="106">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/emergency.png" alt="Electricity" class="card-icon" />
+        <h3>Electricity Helpline</h3>
+        <small class="card-subtitle">Electricity Outage</small>
+        <p class="number">16216</p>
+        <span class="badge">Electricity</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="16216">Copy</button>
+          <button class="call-btn" data-service="Electricity" data-number="16216">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/emergency.png" alt="BRAC" class="card-icon" />
+        <h3>Brac Helpline</h3>
+        <small class="card-subtitle">Brac</small>
+        <p class="number">16445</p>
+        <span class="badge">NGO</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="16445">Copy</button>
+          <button class="call-btn" data-service="BRAC" data-number="16445">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <button class="heart-btn">💗</button>
+        <img src="./assets/emergency.png" alt="Travel" class="card-icon" />
+        <h3>Bangladesh Railway Helpline</h3>
+        <small class="card-subtitle">Bangladesh Railway</small>
+        <p class="number">163</p>
+        <span class="badge">Travel</span>
+        <div class="buttons">
+          <button class="copy-btn" data-number="163">Copy</button>
+          <button class="call-btn" data-service="Railway" data-number="163">📞 Call</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Call History -->
+    <aside class="history">
+      <div class="history-header">
+        <h1> <i class="fa-solid fa-clock"></i> Call History</h1>
+        <button id="clearHistory" style="color: white; background-color: #28a745; padding: 13px 32px; border-radius: 50px; border: transparent; cursor: pointer;">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </aside>
+  </main>
+
+  <script src="/java.js"></script>
+</body>
+</html>
