@@ -199,3 +199,81 @@ body {
   text-align: center;
   min-width: 100px;
 }
+
+/* ===== Mobile Responsiveness ===== */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr; /* Single column cards */
+    gap: 12px;
+  }
+
+  .card {
+    font-size: 18px; /* Reduce card font size for small screens */
+    padding: 12px;
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack copy & call buttons */
+    gap: 6px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .history {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr; /* Ensure single column on very small screens */
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card .number {
+    font-size: 18px;
+  }
+
+  .card-subtitle {
+    font-size: 12px;
+  }
+
+  .copy-btn,
+  .call-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+  }
+
+  .navbar-logo {
+    width: 30px;
+    height: 30px;
+  }
+}
