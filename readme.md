@@ -3,7 +3,9 @@ Answer the following questions clearly:
 1) What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 **Ans:**
 i) getElementById means selects one element by its id. Returns the element or null if not found.
+
 ii) getElementsByClassName means selects all elements with that class. Returns a live HTMLCollection (updates if DOM changes).
+
 iii)querySelector means selects the first element matching a CSS selector. Works with #id, .class, tag, or complex selectors.
 
 
@@ -34,10 +36,12 @@ The way browser events flow through a page after being triggered is known as eve
 
 **Ans:**
 You place one listener on a parent and use event.target to determine which child caused the event, rather than adding event listeners to numerous child elements.
+
 Use:Code that is more effective and clean.
 
 5) What is the difference between preventDefault() and stopPropagation() methods?
 
 **Ans:**
 i) preventDefault() means to blocks the browser’s default behavior.
+
 ii) stopPropagation() means to blocks the event from moving up the DOM.
